@@ -239,6 +239,7 @@ if(user != null && userIdes != null) {
 } else {
   console.log("Log In Please")
   setTimeout(() => {
+    alert("Log In Please");
     open("/login.html", "_self")
-  }, 4000);
+  }, 0);
 }
