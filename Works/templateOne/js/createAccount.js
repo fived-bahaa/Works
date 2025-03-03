@@ -60,6 +60,9 @@ submit.addEventListener('click', function () {
             localStorage.setItem("accounts", JSON.stringify(myArray))
             funError("Account created successfully");
             error.style.backgroundColor = "green"
+            setTimeout(() => {
+              open("/login.html", "_self")
+            }, 1000);
           } else {
             funError("Email and password already exist");
           }
