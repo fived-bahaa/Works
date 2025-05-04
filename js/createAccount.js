@@ -61,7 +61,8 @@ submit.addEventListener('click', function () {
             funError("Account created successfully");
             error.style.backgroundColor = "green"
             setTimeout(() => {
-              open("/login.html", "_self")
+              // If Download Project remove "/works"
+              open("/Works/login.html", "_self")
             }, 1000);
           } else {
             funError("Email and password already exist");
