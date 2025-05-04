@@ -62,7 +62,7 @@ submit.addEventListener('click', function () {
             error.style.backgroundColor = "green"
             setTimeout(() => {
               // If Download Project remove "/works"
-              open("/Works/login.html", "_self")
+              open("/login.html", "_self")
             }, 1000);
           } else {
             funError("Email and password already exist");
